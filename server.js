@@ -1,8 +1,9 @@
-import express from "express";
-import cors from "cors";
-import bcrypt from "bcryptjs";
-import jwt from "jsonwebtoken";
-
+const express = require("express");
+const cors    = require("cors");
+const bcrypt  = require("bcryptjs");
+const jwt     = require("jsonwebtoken");
+const low     = require("lowdb");
+const FileSync = require("lowdb/adapters/FileSync");
 const app = express();
 const PORT = 5000;
 const JWT_SECRET = "secret123";
